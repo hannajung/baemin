@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: "BMfont";
-    src: url("../fonts/BMDOHYEON_ttf.ttf");
+    src: url("../baemin/fonts/BMDOHYEON_ttf.ttf");
 }
 
 body{
@@ -33,7 +33,6 @@ body{
     background-color: #2AC1BC;
 }
 .logoAndSearchBar{
-
     display: flex;
     align-items: center;
 }
@@ -57,6 +56,7 @@ body{
 }
 
 .logo_text{
+    font-family: 'BMfont';
     display: flex;
     list-style: none;
     align-items: center;
@@ -64,7 +64,7 @@ body{
 }
 
 .logo_text a{
-    font-family: "BMfont";
+    /* font-family: "BMfont"; */
     justify-content: center;
     align-items: center;
     font-size: 1.4em;
@@ -195,6 +195,7 @@ body{
 
 
 .menu a{
+    font-family: 'ELAND_Choice_M';
     vertical-align: middle;
     display: flex;
     justify-content: center;
@@ -439,6 +440,7 @@ img{
     justify-content: center;
 }
 
+
 .deal_of_the_day{
     width: 95%;
     margin: 0;
@@ -447,6 +449,13 @@ img{
 .deal_table_row{
     margin: auto;
     justify-content:end;
+}
+
+.deal_table2{
+    margin: 0;
+    align-items: center;
+    display: none;    
+    justify-content: center;
 }
 
 .one_box{
@@ -492,12 +501,13 @@ img{
     color:rgb(61, 61, 61);
 }
 
-.more{
+.moreButton{
     display: flex;
     justify-content: center;
 }
 
 .more_sale{
+    color: #ffffff;
     border-radius: 50%;
     width: 130px;
     height: 130px;
@@ -544,6 +554,7 @@ img{
 
 
 .info{
+    font-family: 'ELAND_Choice_M';
     display: flex;
     justify-content: space-around;
     background-color: #9c9c9c;
@@ -552,6 +563,7 @@ img{
 }
 
 .info_logo{
+    font-family: "BMfont";
     margin-left: -50px;
     margin-top: 100px;
     align-items: center;
@@ -559,7 +571,6 @@ img{
 }
 
 .info_logo a{
-    font-family: 'BMfont';
     font-size: 3em;
     text-decoration: none;
     list-style: none;
@@ -567,6 +578,7 @@ img{
 }
 
 .info_logo2{
+    font-family: "BMfont";
     margin-left: -50px;
     margin-top: 20px;
     align-items: center;
@@ -574,7 +586,6 @@ img{
 }
 
 .info_logo2 a{
-    font-family: 'BMfont';
     font-size: 20px;
     text-decoration: none;
     list-style: none;
