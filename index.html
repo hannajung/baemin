@@ -18,7 +18,29 @@
     <script defer src="main.js"></script>
 </head>
 <body>
-    <img class="app_download" src="../baemin/img/download.png">다운로드</img>
+    <img onclick ="download()" class="app_download" src="../baemin/img/download.png" id="download"></img>
+
+    <div class="download_page" id="download_page">
+        <div class="close_page">
+            <div class="close_navbar">배달의 민족, 이제는 더 간편하게 앱으로 만나보세요!
+                <img onclick="closeTab()" class="closeIcon" src="../baemin/img/close.png" id="closeIcon"></img>
+                <div class="emailBox">
+                    <input class="email" type="text" placeholder="휴대폰 번호 11자리 입력 (하이픈 제외)"></input>
+                </div>
+                <div class="checkButton">
+                    <input type="checkbox" id="checkButton"></input>
+                    <div class="checkbox_txt">개인정보 이용/수집에 동의합니다.</div>
+                </div>
+                <img src="../baemin/img/bar.png"></img>
+                <div class="warning">
+                    <div>* 이용자 본인 확인을 목적으로 인증번호 확인 절차가 필요합니다.</div>
+                    <div>* 인증번호 및 앱 설치주소 전송 비용은 무료입니다.</div>
+                    <div>* 한 개의 휴대폰 번호로 하두 최대 3번까지 전송이 가능합니다.</div>
+                </div>
+                <img class="hello" src="img/hello.png"></img>
+            </div>
+        </div>
+    </div>
     <!--nav bar 만들기-->
     <div class="navbar">
         <div class="logoAndSearchBar">
@@ -197,8 +219,8 @@
         <table class="deal_of_the_day">
             <tr class="deal_table">
                 <td class="card"><div class="container"><div class="middle">> 바로가기</div><img class="deal_table_img" src="../baemin/img/sale/sale10.png"></img><a class="deal_table_title">"찜"의 절대강자 먹고 코로나 극복</a></td>
-                <td class="card"><div class="container"><div class="middle">> 바로가기</div><img class="deal_table_img" src="../baemin/img/sale/sale11.png"></img><a class="deal_table_title" href="#">브랜드관 2천원 할인 [4/24~30] 포장도 배달도 배민에서</a></td>
                 <td class="card"><div class="container"><div class="middle">> 바로가기</div><img class="deal_table_img" src="../baemin/img/sale/sale12.png"></img><a class="deal_table_title" href="#">4/24~30, 8천원 이상 주문시 포장 3천원 할인!</a></td>
+                <td class="card"><div class="container"><div class="middle">> 바로가기</div><img class="deal_table_img" src="../baemin/img/sale/sale11.png"></img><a class="deal_table_title" href="#">브랜드관 2천원 할인 [4/24~30] 포장도 배달도 배민에서</a></td>
             </tr>
         </table>
     </div>
@@ -278,6 +300,7 @@
 
                 if (read_counter==1){
                     deal_table2.style.display = "block"; 
+                    deal_table2.style.position = "absolute";
                     read_counter ++;                   
 
                 }else if (read_counter == 2){
@@ -288,6 +311,41 @@
                 else{
                 }
             }
+
+            function download(){
+                var download_page = document.getElementById("download_page");
+                var download = document.getElementById("download");
+
+                download_page.style.display = "flex";
+                download.style.display ="none"
+            }
+
+            // $(document).ready(function(){
+            //     $("#download").click(function(){
+            //         $(".download_page").slideDown();
+            //     });
+            //     $(".closeIcon").click(function(){
+            //         $(".download_page").slideUp();
+            //     });
+            // });
+
+            // $(function(){
+            //     $("#download").on("click", function(){
+            //         $(".download_page").slideDown();
+            //     })
+            //     $(".closeIcon").on("click", function(){
+            //         $(".download_page").slideUp();
+            //     })
+            // })
+
+            function closeTab(){
+                var download_page = document.getElementById("download_page");
+                var download = document.getElementById("download");
+
+                download_page.style.display = "none";
+                download.style.display="flex";            
+            }
+
 
         </script>
 </body>

@@ -25,6 +25,97 @@ body{
     z-index: 1;
 }
 
+.download_page{
+    position: fixed; /*scrolling does not affect this div*/
+    bottom: 0;
+    z-index: 1;
+    margin: 0;
+    display:none;
+    width: 100%;
+    height:500px;
+    background:rgb(238, 238, 238);
+    justify-content: center;
+}
+
+.close_page{
+    margin: 0;
+    display: flex;
+    width: 80%;
+    justify-content: center;
+}
+
+.close_navbar{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "bmFont";
+    color: rgb(63, 63, 63);
+    font-size: 23px;
+}
+
+.hello{
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 165px;
+    width: 70px;
+    height: 70px;
+    bottom: 0;
+}
+
+
+.closeIcon{
+    position: absolute;
+    margin-top: -400px;
+    margin-left: 700px;
+    display: flex;
+    width: 40px;
+    height: 40px;
+}
+
+.emailBox{
+    display: flex;
+    align-items: center;
+    border: none;
+    margin-left: 50px;
+    width: 400px;
+    height: 30px;
+    background-color: white;
+    border-radius: 7px;
+}
+
+.email{
+    border-radius: 40px;
+    padding: 20px;
+    width: 400px;
+    height: 15px;
+    font-family: 'ELAND_Choice_M';
+    font-size: 20px;
+}
+
+.checkButton{
+    display: flex;
+    align-items: center;
+}
+
+#checkButton{
+    width: 20px;
+    height: 20px;
+}
+
+.checkbox_txt{
+    margin-left: 5px;
+    font-size: 17px;
+    font-family: 'ELAND_Choice_M';
+}
+
+.warning{
+    font-size: 13px;
+    font-family: 'ELAND_Choice_M';
+}
+
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -510,7 +601,7 @@ img{
 
 
 .container:hover .middle{
-    opacity: 1;
+    opacity: 3;
 
 }
 
