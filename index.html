@@ -183,7 +183,7 @@
         </table>
     </div>
 
-    <div class="deal_table2">
+    <div class="deal_table" id="deal_table2">
         <table class="deal_of_the_day">
             <tr class="deal_table">
                 <td class="card"><img class="deal_table_img" src="sale1.png"></img><a class="deal_table_title">오늘도 공차 하세요</a></td>
@@ -198,8 +198,10 @@
         </table>
     </div>
 
-    <div class="moreButton">
-        <button onclick="readMore()" class="more_sale">+</button>
+    <div class="readMore">
+        <button onclick="readMore()" class="more_sale" id="moreButton">+</button>
+
+
     </div>
 
     <ul class="info">
@@ -263,20 +265,20 @@
             },5000);
 
 
+            var read_counter = 1;
             function readMore(){
-                var deal_table2 = document.getElementById(deal_table2);
-                var moreButton = document.getElementById(moreButton);
-                var counter = 1;
+                var deal_table2 = document.getElementById("deal_table2");
+                var moreButton = document.getElementById("moreButton");
 
-                if (counter == 1){
-                    deal_table2.style.display = "block";
-                    counter ++;
+                if (read_counter <4){
+                    deal_table2.style.display = "block"; 
+                    moreButton.innerHTML = read_counter;
+                    read_counter ++;                   
                 }else{
                     moreButton.style.display = "none";
                 }
             }
 
-            
         </script>
 </body>
 </html>

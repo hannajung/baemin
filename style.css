@@ -442,7 +442,7 @@ img{
 
 
 .deal_of_the_day{
-    width: 95%;
+    width: 100%;
     margin: 0;
 }
 
@@ -451,12 +451,15 @@ img{
     justify-content:end;
 }
 
-.deal_table2{
+#deal_table2{
     margin: 0;
     align-items: center;
     display: none;    
     justify-content: center;
 }
+
+
+
 
 .one_box{
     justify-content: center;
@@ -467,7 +470,7 @@ img{
     border-radius: 40px;
     justify-content: space-between;
     margin-bottom: 30px;
-    box-shadow:5px 5px 10px grey;
+    box-shadow:5px 5px 10px rgb(182, 182, 182);
 }
 
 .deal_table_img{
@@ -501,7 +504,7 @@ img{
     color:rgb(61, 61, 61);
 }
 
-.moreButton{
+.readMore{
     display: flex;
     justify-content: center;
 }
@@ -509,9 +512,9 @@ img{
 .more_sale{
     color: #ffffff;
     border-radius: 50%;
-    width: 130px;
-    height: 130px;
-    font-size: 100px;
+    width: 100px;
+    height: 100px;
+    font-size: 80px;
     background-color: #2AC1BC;
     border: none;
 }
