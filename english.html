@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baemin</title>
+    <!--타이틀 아이콘 설정-->
+    <link rel="shortcut icon" href="title_logo.png">
+    <!--css 연결하기-->
+    <link rel="stylesheet" href="style.css">
+    <!--font 사용하기-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8c9e6c2be9.js" crossorigin="anonymous"></script>
+    <!--js 연결하기-->
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <img onclick ="download()" class="app_download" src="../baemin/img/download.png" id="download"></img>
+
+    <div class="download_page" id="download_page">
+        <div class="close_page">
+            <div class="close_navbar">Bamin, Download our App on your phone and register!
+                <img onclick="closeTab()" class="closeIcon" src="../baemin/img/close.png" id="closeIcon"></img>
+                <div class="emailBox">
+                    <input class="email" type="text" placeholder="Enter your phone number (exclude hyphen)"></input>
+                    <a class="searchBar_btn" href="#" type="submit"><i class="fa fa-search"></i></a>
+                </div>
+                <div class="checkButton">
+                    <input type="checkbox" id="checkButton"></input>
+                    <div class="checkbox_txt">I agree to the terms and conditions.</div>
+                </div>
+                <img src="../baemin/img/bar.png"></img>
+                <div class="warning">
+                    <div>* The authentication number verification process is required to verify the user's identity.</div>
+                    <div>* The authentication number and app installation address are free of charge.</div>
+                    <div>* It can be sent up to three times a day to a single mobile number.</div>
+                </div>
+                <img class="hello" src="img/hello.png"></img>
+            </div>
+        </div>
+    </div>
+    <!--nav bar 만들기-->
+    <div class="whole_navbar">
+    <div class="navbar">
+        <div class="logoAndSearchBar">
+            <div class="logo">
+                <!--큰 상자틀 만들기-->
+                <img class="logo_img" src="logo.png"> 
+                <ul class="logo_text">
+                    <li><a href="">Baemin</a></li>
+                </ul>
+            </div>
+            <div class="searchBarBox">
+                <input class="searchBar" type="text" placeholder="Search for Menu or Store"></input>
+                <a class="searchBar_btn" href="#" type="submit"><i class="fa fa-search"></i></a>
+            </div>
+        </div>
+        <div class="my_items">
+            <!--unordered list-->
+            <a href="#" class="navbar1_toggleBtn"><i class="fas fa-bars"></i></a>    
+            <ul class="navbar1_items">
+                <!--    (li>a)*4   하고 엔터 => list 안에 a가 있고 이것을 5번 반복 -->
+                <li><a href="index.html">한국어</a></li>   
+                
+                <!--font awesome에서 복사해서 붙여주기-->   
+            </ul> 
+        </div>
+    </div>
+
+    <div class="navbar2">
+        <div class="navbar2_items">
+            <div class="menu order">
+                <a href="">Delivery</a>
+                <div class="food_table">
+                    <table>
+                        <tr class="food_category">
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/1.png"><a href="">Live</a></td>
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/2.png"><a href="">Present</a></td>
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/3.png"><a href="">PickUp</a></td>
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/4.png"><a href="">One Serving</a></td>
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/5.png"><a href="">Korean</a></td>
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/6.png"><a href="">Street Food</a></td>
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/7.png"><a href="">Cafe·Dessert</a></td>
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/8.png"><a href="">Japanese</a></td>
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/9.png"><a href="">Chiken</a></td>
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/10.png"><a href="">Pizza</a></td>
+                        </tr> 
+                        <tr class="food_category">
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/11.png"><a href="">Asian·Italian</a></td>
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/12.png"><a href="">Chinese</a></td>
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/13.png"><a href="">Ssam</a></td>
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/14.png"><a href="">Midnight Snack</a></td>
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/15.png"><a href="">Steamed·Soup</a></td>
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/16.png"><a href="">Lunch box</a></td>
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/17.png"><a href="">Fastfood</a></td>
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/18.png"><a href="">Brand</a></td>
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/19.png"><a href="">Ranking</a></td>
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/20.png"><a href="">delicacies</a></td>
+                        </tr> 
+                    </table>
+                </div>
+            </div>
+            <div class="menu pickup">
+                <a href="">PickUp</a>
+                <div class="food_table">
+                    <table>
+                        <tr class="food_category">
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/1.png"><a href="">Live</a></td>
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/2.png"><a href="">Present</a></td>
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/3.png"><a href="">PickUp</a></td>
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/4.png"><a href="">One Serving</a></td>
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/5.png"><a href="">Korean</a></td>
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/6.png"><a href="">Street Food</a></td>
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/7.png"><a href="">Cafe·Dessert</a></td>
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/8.png"><a href="">Japanese</a></td>
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/9.png"><a href="">Chiken</a></td>
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/10.png"><a href="">Pizza</a></td>
+                        </tr> 
+                        <tr class="food_category">
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/11.png"><a href="">Asian·Italian</a></td>
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/12.png"><a href="">Chinese</a></td>
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/13.png"><a href="">Ssam</a></td>
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/14.png"><a href="">Midnight Snack</a></td>
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/15.png"><a href="">Steamed·Soup</a></td>
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/16.png"><a href="">Lunch box</a></td>
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/17.png"><a href="">Fastfood</a></td>
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/18.png"><a href="">Brand</a></td>
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/19.png"><a href="">Ranking</a></td>
+                            <td class="table_wid"><img href="" class="menu_icon" src="../baemin/food_menu/20.png"><a href="">delicacies</a></td>
+                        </tr> 
+                    </table>
+                </div>
+            </div>
+            <div class="menu event">
+                <a href="">Event</a>
+            </div>
+            <div class="menu pay">
+                <a href="">Baemin Pay</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <div class="slideAndMenu">
+        <div class="slider">
+            <div class="slides">
+                <!--name을 설정해줘야 중복 선택 불가-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+                <div class="slide first">
+                    <img src="../baemin/img/slides/1.jpg" alt="" >
+                </div>
+                <div class="slide">
+                    <img src="../baemin/img/slides/2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../baemin/img/slides/3.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../baemin/img/slides/4.jpg" alt="">
+                </div>
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+            </div>
+
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        </div>    
+    </div>
+
+    <div class="deal_title">
+        <!--큰 상자틀 만들기-->
+        <ul class="deal_title_text">
+            <a href="">Deal of the Day</a>
+        </ul>
+        <img class="deal_img" src="../baemin/img/sale/sale.png"> 
+    </div>
+
+    <div class="deal_table">
+        <table class="deal_of_the_day">
+            <tr class="deal_table">
+                <td class="card"><div class="container"><div class="middle">> Shortcut</div><img class="deal_table_img" src="../baemin/img/sale/sale1.png"></img><a class="deal_table_title">To inspire the human spirit and create happiness</a></td>
+                <td class="card"><div class="container"><div class="middle">> Shortcut</div><img class="deal_table_img" src="../baemin/img/sale/sale2.png"></img><a class="deal_table_title" href="#">The Best Pizza Delivery Expert! Life Food, Domino's</a></td>
+                <td class="card"><div class="container"><div class="middle">> Shortcut</div><img class="deal_table_img" src="../baemin/img/sale/sale3.png"></img><a class="deal_table_title" href="#">Harmony of soft, sour, sweet onion sauce with chicken</a></td>
+            </tr>
+            <tr class="deal_table">
+                <td class="card"><div class="container"><div class="middle">> Shortcut</div><img class="deal_table_img" src="../baemin/img/sale/sale4.png"></img><a class="deal_table_title">Happy meal, EVERYDAY PICNIC YamSam Kimbop</a></td>
+                <td class="card"><div class="container"><div class="middle">> Shortcut</div><img class="deal_table_img" src="../baemin/img/sale/sale5.png"></img><a class="deal_table_title" href="#">Best promotion in this spring! Up to 4,000 won discount coupon</a></td>
+                <td class="card"><div class="container"><div class="middle">> Shortcut</div><img class="deal_table_img" src="../baemin/img/sale/sale6.png"></img><a class="deal_table_title" href="#">Nolbu Bossam Kimchi, soft boiled pork and jokbal grilled at 200°C directly!</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="deal_table" id="deal_table2">
+        <table class="deal_of_the_day">
+            <tr class="deal_table">
+                <td class="card"><div class="container"><div class="middle">> Shortcut</div><img class="deal_table_img" src="../baemin/img/sale/sale7.png"></img><a class="deal_table_title">Chicken, Burger, Yummy! KFC</a></td>
+                <td class="card"><div class="container"><div class="middle">> Shortcut</div><img class="deal_table_img" src="../baemin/img/sale/sale8.png"></img><a class="deal_table_title" href="#">[NEW]Launch Retro Special Set is released!</a></td>
+                <td class="card"><div class="container"><div class="middle">> Shortcut</div><img class="deal_table_img" src="../baemin/img/sale/sale9.png"></img><a class="deal_table_title" href="#">Special deal to delivery customers! Regular size available at small size prices</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="deal_table" id="deal_table3">
+        <table class="deal_of_the_day">
+            <tr class="deal_table">
+                <td class="card"><div class="container"><div class="middle">> Shortcut</div><img class="deal_table_img" src="../baemin/img/sale/sale10.png"></img><a class="deal_table_title">Eating the strongest food in "Steamed" and overcoming Corona together</a></td>
+                <td class="card"><div class="container"><div class="middle">> Shortcut</div><img class="deal_table_img" src="../baemin/img/sale/sale12.png"></img><a class="deal_table_title" href="#">4/24~30, 3,000 won discount on packaging if you order more than 8,000 won!</a></td>
+                <td class="card"><div class="container"><div class="middle">> Shortcut</div><img class="deal_table_img" src="../baemin/img/sale/sale11.png"></img><a class="deal_table_title" href="#">[4/24~30] pick up and delivery in Baemin</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="readMore">
+        <button onclick="readMore()" class="more_sale" id="moreButton">+</button>
+
+
+    </div>
+
+    <ul class="info">
+        <div class="logo1">
+            <div class="address1">
+                <li><a href="">(주)우아한형제들</a></li>
+                <li><a href="">2nd floor, Wiryeseong-daero 2-ga Building, Songpa-gu, Seoul</a></li>
+            </div>
+            <div class="address2">
+                <li><a href="">Business Number:120-87-65763</a></li>
+                <li><a href="">Business mail-order: Seoul Songpa-0515</a></li>
+            </div>
+            <div class="address3">
+                <li><a href="">Electronic Financial Dispute Handling</a></li>
+                <li><a href="">Phone: 1600-0987 | Fax: 050-6050-0400</a></li>
+                <li><a href="">e-mail address: help@woowahan.com</a></li>
+            </div>
+            <div class="address4">
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-youtube"></i></a></li>
+            </div>
+        </div>
+        <div class="logo2">
+            <div class="info_logo">
+                <li><a href="">우리가</a></li>
+                <li><a href="">어떤</a></li>
+                <li><a href="">민족입니까</a></li>
+            </div>
+            <div class="info_logo2">
+                <li><a href="">Baemin</a></li>
+            </div>
+        </div>
+    </ul>
+
+    
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+        <script type="text/javascript">
+
+            const toggleBtn = document.querySelector('.navbar1_toggleBtn');
+            const items = document.querySelector('.navbar1_items');
+
+            toggleBtn.addEventListener('click', ()=>{
+                items.classList.toggle('active');
+            });
+
+        /*5초 후 첫 슬라이드 이미지 바꾸기*/
+            var counter = 1;
+            setInterval(function(){
+               document.getElementById('radio' + counter).checked = true; 
+                counter ++;
+                if(counter > 4){
+                    counter = 1;
+                }
+            },5000);
+
+
+            var read_counter = 1;
+            function readMore(){
+                var deal_table2 = document.getElementById("deal_table2");
+                var deal_table3 = document.getElementById("deal_table3");
+                var moreButton = document.getElementById("moreButton");
+
+                if (read_counter==1){
+                    deal_table2.style.display = "block"; 
+                    read_counter ++;                   
+
+                }else if (read_counter == 2){
+                    deal_table3.style.display = "block"; 
+                    read_counter ++;
+                    moreButton.style.display = "none";  /*no more to show*/
+                }
+                else{
+                }
+            }
+
+            /* 다운로드 창 열고 닫기 without animation
+            function download(){
+                var download_page = document.getElementById("download_page");
+                var download = document.getElementById("download");
+
+                download_page.style.display = "flex";
+                download.style.display ="none"
+            }
+            function closeTab(){
+                var download_page = document.getElementById("download_page");
+                var download = document.getElementById("download");
+
+                download_page.style.display = "none";
+                download.style.display="flex";            
+            }
+            */
+
+
+            /* 다운로드 창 슬라이드: 방법1 */
+            $(document).ready(function(){
+                $(".app_download").click(function(){
+                    $(".download_page").slideDown();
+                    $(".download_page").slideDown("fast");
+                    $(".download_page").css("display","flex");
+                });
+                $(".closeIcon").click(function(){
+                    $(".download_page").slideUp();
+                });
+            });
+
+
+            /* 다운로드 창 슬라이드: 방법2 
+            $(function(){
+                $(".app_download").on("click", function(){
+                    $(".download_page").slideDown();
+                    $(".download_page").css("display","flex");
+
+                })
+                $(".closeIcon").on("click", function(){
+                    $('.download_page').slideUp();
+                })
+            })
+            */
+
+            
+
+
+        </script>
+        
+</body>
+</html>
