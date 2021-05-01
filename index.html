@@ -268,7 +268,7 @@
 
 
 
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
 
@@ -300,7 +300,6 @@
 
                 if (read_counter==1){
                     deal_table2.style.display = "block"; 
-                    deal_table2.style.position = "absolute";
                     read_counter ++;                   
 
                 }else if (read_counter == 2){
@@ -312,6 +311,7 @@
                 }
             }
 
+            /* 다운로드 창 열고 닫기 without animation
             function download(){
                 var download_page = document.getElementById("download_page");
                 var download = document.getElementById("download");
@@ -319,25 +319,6 @@
                 download_page.style.display = "flex";
                 download.style.display ="none"
             }
-
-            // $(document).ready(function(){
-            //     $("#download").click(function(){
-            //         $(".download_page").slideDown();
-            //     });
-            //     $(".closeIcon").click(function(){
-            //         $(".download_page").slideUp();
-            //     });
-            // });
-
-            // $(function(){
-            //     $("#download").on("click", function(){
-            //         $(".download_page").slideDown();
-            //     })
-            //     $(".closeIcon").on("click", function(){
-            //         $(".download_page").slideUp();
-            //     })
-            // })
-
             function closeTab(){
                 var download_page = document.getElementById("download_page");
                 var download = document.getElementById("download");
@@ -345,8 +326,39 @@
                 download_page.style.display = "none";
                 download.style.display="flex";            
             }
+            */
+
+
+            /* 다운로드 창 슬라이드: 방법1 */
+            $(document).ready(function(){
+                $(".app_download").click(function(){
+                    $(".download_page").slideDown();
+                    $(".download_page").slideDown("fast");
+                    $(".download_page").css("display","flex");
+                });
+                $(".closeIcon").click(function(){
+                    $(".download_page").slideUp();
+                });
+            });
+
+
+            /* 다운로드 창 슬라이드: 방법2 
+            $(function(){
+                $(".app_download").on("click", function(){
+                    $(".download_page").slideDown();
+                    $(".download_page").css("display","flex");
+
+                })
+                $(".closeIcon").on("click", function(){
+                    $('.download_page').slideUp();
+                })
+            })
+            */
+
+            
 
 
         </script>
+        
 </body>
 </html>
