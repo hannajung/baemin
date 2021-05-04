@@ -25,8 +25,8 @@
             <div class="close_navbar">배달의 민족, 이제는 더 간편하게 앱으로 만나보세요!
                 <img onclick="closeTab()" class="closeIcon" src="../baemin/img/close.png" id="closeIcon"></img>
                 <div class="emailBox">
-                    <input class="email" type="text" placeholder="휴대폰 번호 11자리 입력 (하이픈 제외)"></input>
-                    <a class="searchBar_btn" href="#" type="submit"><i class="fa fa-search"></i></a>
+                    <input id="phoneNumber" class="email" type="text" placeholder="휴대폰 번호 11자리 입력 (하이픈 제외)"></input>
+                    <a onclick="downloadSubmit()" class="searchBar_btn" href="#" type="submit"><i class="fa fa-search"></i></a>
                 </div>
                 <div class="checkButton">
                     <input type="checkbox" id="checkButton"></input>
@@ -313,6 +313,30 @@
                 }
             }
 
+            function downloadSubmit(){
+                var checkButton = document.getElementById("checkButton");
+                var phoneNumber = document.getElementById("phoneNumber").value;
+                var boolean = phoneNumber.startsWith("010");
+
+
+                if (checkButton.checked==false){
+                    alert("개인정보 이용/수집에 동의해주세요.");
+                }else{
+                    if(phoneNumber==""){
+                        alert("핸드폰 번호를 입력해주세요.");
+                    }else if(boolean==false){
+                        alert("핸드폰 번호를 입력해주세요.\n핸드폰 번호는 010으로 시작해야 합니다.");
+                    }else if(phoneNumber.length!=8){
+                        alert("번호를 다시 확인해주세요.");
+                    }
+                    else{
+                        alert("배민앱 다운로드 링크가 전송되었습니다.");
+                    }
+                }
+            }
+            
+
+
             /* 다운로드 창 열고 닫기 without animation
             function download(){
                 var download_page = document.getElementById("download_page");
@@ -357,7 +381,8 @@
             })
             */
 
-            
+
+           
 
 
         </script>

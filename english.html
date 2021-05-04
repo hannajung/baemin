@@ -25,8 +25,8 @@
             <div class="close_navbar">Bamin, Download our App on your phone and register!
                 <img onclick="closeTab()" class="closeIcon" src="../baemin/img/close.png" id="closeIcon"></img>
                 <div class="emailBox">
-                    <input class="email" type="text" placeholder="Enter your phone number (exclude hyphen)"></input>
-                    <a class="searchBar_btn" href="#" type="submit"><i class="fa fa-search"></i></a>
+                    <input id="phoneNumber"class="email" type="text" placeholder="Enter your phone number (exclude hyphen)"></input>
+                    <a onclick="downloadSubmit()" class="searchBar_btn" href="#" type="submit"><i class="fa fa-search"></i></a>
                 </div>
                 <div class="checkButton">
                     <input type="checkbox" id="checkButton"></input>
@@ -311,6 +311,29 @@
                 else{
                 }
             }
+
+            function downloadSubmit(){
+                var checkButton = document.getElementById("checkButton");
+                var phoneNumber = document.getElementById("phoneNumber").value;
+                var boolean = phoneNumber.startsWith("010");
+
+                if (checkButton.checked==false){
+                    alert("Please agree to use/collect personal information.");
+                }else{
+                    if(phoneNumber==""){
+                        alert("Please enter your phone number.");
+                    }else if(boolean==false){
+                        alert("Please enter your phone number.\nPhone number must begin with 010.");
+                    }else if(phoneNumber.length!=8){
+                        alert("Please check your phone number again.");
+                    }
+                    else{
+                        alert("Download link has been sent.");
+                    }
+                }
+            }
+
+            
 
             /* 다운로드 창 열고 닫기 without animation
             function download(){

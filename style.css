@@ -277,9 +277,10 @@ body{
     color:#226461;
     text-decoration: none;
 }
-.navbar2_items li{
-    /* padding: 0px 10px; */
-}
+/* .navbar2_items li{
+    /* padding: 0px 10px; 
+} 
+*/
 
 .navbar2_items li:hover a{
     color:#000000;
