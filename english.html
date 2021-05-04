@@ -25,7 +25,7 @@
             <div class="close_navbar">Bamin, Download our App on your phone and register!
                 <img onclick="closeTab()" class="closeIcon" src="../baemin/img/close.png" id="closeIcon"></img>
                 <div class="emailBox">
-                    <input id="phoneNumber"class="email" type="text" placeholder="Enter your phone number (exclude hyphen)"></input>
+                    <input id="phoneNumber" class="email" type="text" placeholder="Enter your phone number (exclude hyphen)"></input>
                     <a onclick="downloadSubmit()" class="searchBar_btn" href="#" type="submit"><i class="fa fa-search"></i></a>
                 </div>
                 <div class="checkButton">
@@ -138,7 +138,7 @@
                 <a href="#here">Event</a>
             </div>
             <div class="menu notice">
-                <a href="">Notice</a>
+                <a href="notice_english.html">Notice</a>
             </div>
         </div>
     </div>
@@ -324,8 +324,6 @@
                         alert("Please enter your phone number.");
                     }else if(boolean==false){
                         alert("Please enter your phone number.\nPhone number must begin with 010.");
-                    }else if(phoneNumber.length!=11){
-                        alert("Please check your phone number again.");
                     }
                     else{
                         alert("Download link has been sent.");
