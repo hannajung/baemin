@@ -140,6 +140,9 @@
             <div class="menu notice">
                 <a href="notice.html">공지</a>
             </div>
+            <div class="menu english">
+                <a href="english.html">ENGLISH</a>
+            </div>
         </div>
     </div>
     </div>
@@ -276,8 +279,9 @@
 
         <script type="text/javascript">
 
+            // 창이 작아지면 햄버거 메뉴 나타내기
             const toggleBtn = document.querySelector('.navbar1_toggleBtn');
-            const items = document.querySelector('.navbar1_items');
+            const items = document.querySelector('.navbar2_items');
 
             toggleBtn.addEventListener('click', ()=>{
                 items.classList.toggle('active');
