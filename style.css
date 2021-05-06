@@ -334,9 +334,6 @@ body{
     transition:width .3s;
 }
 
-.english{
-    display: none;
-}
 
 img{
     display: block;
@@ -762,10 +759,6 @@ img{
         justify-content: center;
     }
 
-    .english{
-        display: flex;
-    }
-
     .navbar1_items.active{
         font-family: 'ELAND_Choice_M';
         justify-content: center; /*item들 오른쪽으로 붙이기*/
@@ -840,11 +833,6 @@ img{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
-
-    .english{
-        display: flex;
-
     }
 
     .navbar1_items.active{
