@@ -348,82 +348,76 @@ img{
     transition: 1s;
 }
 
-<!--슬라이더-->
 
-.slider{/*전체 슬라이더의 크기*/
-    width: 100%; 
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
 
-.slides{
-    /* margin-left: 100px; */
-    background-color: rgb(255, 255, 255);
-    width:1150px; /*(1050+50)*/
-    overflow:hidden;
-    display:flex;
-}
 
-.slides input{
-    display: none;
-}
 
-.slide{ /*안에있는이미지*/
-    /* width: 100%; */
-    transition: 3s; /*클릭한 이미지로 이동하는데 걸리는 시간*/
-    justify-content: space-between;
-}
 
-.slide img{
-    height: 470px; /*슬라이드 안에 있는 이미지 자체*/
-    width: 1050px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.navigation-manual{
-    /* background-color: cornflowerblue; 밑에 4버튼 박스 */
-    margin-left: 50px;
-    position: absolute;
-    width: 1050px;
+.whole_slide{
     display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
     justify-content: center;
-    margin-top: -35px;
 }
 
-.manual-btn{
-    width: 3px;
-    height: 3px;
-    border: 2px solid #ffffff;
-    padding: 5px;
-    border-radius: 15px;
+.img-slider{
+    padding-top: 5px;
+    position: relative;
+    width: 900px;
+    height: 450px;
+}
+
+.img-slider .slide{
+    /* z-index: 1; */
+    position: absolute;
+    width: 100%;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);  
+    transition: 0s;
+}
+
+.img-slider .slide.active{
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    transition: 1s;
+    transition-property: clip-path;
+}
+
+
+.img-slider .slide img{
+    margin: 0;
+    width: 900px;
+    height: 450px;
+}
+
+
+
+.navigation{
+    position: absolute;
+    display: flex;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.img-slider .navigation .btn{
+    border:2px solid rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.5);
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+    border-radius: 50%;
     cursor: pointer;
-    transition: 0.5s; /*버튼을 hover 했을 때 걸리는 시간*/
 }
 
-.manual-btn:not(:last-child){
+.img-slider .navigation .btn.active{
+    background: #2AC1BC;
+    /* box-shadow: 0 0 100px rgba(0, 0, 0, 0.5); */
+}
+
+.img-slider .navigation .btn:not(:last-child){
     margin-right: 15px;
 }
 
-.manual-btn:hover{
-    background: #2AC1BC;
-}
-
-#radio1:checked ~ .first{
-    margin-left:0;
-}
-#radio2:checked ~ .first{
-    margin-left: -100%;
-}
-#radio3:checked ~ .first{
-    margin-left: -200%;
-}
-#radio4:checked ~ .first{
-    margin-left: -300%;
-}
-
-/*css for automatic animation*/
 .navigation-auto{
     position: absolute;
     display: flex;
@@ -438,7 +432,7 @@ img{
     border: 2px solid #ffffff;
     padding: 5px;
     border-radius: 15px;
-    transition: 0s; /*버튼 이미지들이 애니메이션으로 보여지는 시간*/
+    transition: 0s; 
     margin-top: 40px;
 }
 
@@ -689,7 +683,6 @@ img{
 
 .notice_info{
     flex-direction: column;
-    /* border: 2px solid brown; */
 }
 
 .notice_title{
@@ -702,7 +695,6 @@ img{
 }
 
 .notice_go{
-    /* border: 2px solid black; */
     font-size: 2em;
     color: grey;
 }
@@ -738,7 +730,6 @@ img{
         justify-content: center;
         display: flex;
     }
-
 
     .searchBarBox{
         width: 300px;
@@ -791,6 +782,7 @@ img{
     .info{
         height: 400px;
     }
+
 }
 
 /* 반응형: 창의 크기가 가장 작아졌을때 */
@@ -892,6 +884,7 @@ img{
         flex-direction: column;
         height: 700px;
     }
+
 }
 
 /* 다운로드앱만 쓰기 다른거 여기 쓰지않기 */
@@ -905,14 +898,48 @@ img{
     }
 }
 
-/* 다운로드 창 반응형으로 만들기
-@media screen and (max-width: 1000px){
-    .closeIcon{
-        width: 30px;
-        height: 30px;
-    }
-} */
+/*반응형: 슬라이더*/
 
+@media screen and (max-width: 1200px) {
+    .navigation{
+        bottom: 0px;
+    }
+    .img-slider{
+        width: 800px;
+        height: 450px;
+    }
+
+    .img-slider .slide img{
+        width: 800px;
+        height: 450px;
+    }
+
+
+}
+
+@media screen and (max-width: 935px) and (min-width: 700px){
+    .img-slider{
+        width: 600px;
+        height: 337.5px;
+    }
+
+    .img-slider .slide img{
+        width: 600px;
+        height: 337.5px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .img-slider{
+        width: 400px;
+        height: 225px;
+    }
+
+    .img-slider .slide img{
+        width: 400px;
+        height: 225px;
+    }
+}
 
 
 .info{
