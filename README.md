@@ -4,7 +4,7 @@
 
 
 ## URL
-- https://------
+- https://hannajung.github.io/baemin/
 
 
 ## Tech
@@ -66,5 +66,3 @@
 
 ****
 
-### 기타 공통
--SCSS를 홀용해서 작업 최소화 및 유지 보수
