@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: "BMfont";
-    src: url("../baemin/fonts/BMDOHYEON_ttf.ttf");
+    src: url("fonts/BMDOHYEON_ttf.ttf") format('truetype');
 }
 
 body{
